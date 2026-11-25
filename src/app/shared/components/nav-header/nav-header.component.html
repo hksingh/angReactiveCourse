@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <a class="brand" (click)="closeMenu()" [routerLink]="['/home']"></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="main-menu"
+     [attr.aria-expanded]="menuOpen" (click)="toggleMenu()">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="main-menu" [class.open]="menuOpen">
+        <li><a [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
+        <li><a [routerLink]="['/about']" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+    </ul>
+</nav>

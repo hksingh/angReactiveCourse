@@ -1,0 +1,8 @@
+<p>home.component works!</p>
+<h1>About route works</h1>
+@if(coursesData$|async; as data){
+    {{data}}
+    @for(course of data; track course.id){
+        <h1>{{course.description}}</h1>
+    }
+}

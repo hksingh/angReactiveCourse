@@ -1,0 +1,7 @@
+@use './variables' as *;
+@mixin flexbox_center(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $gutter-lg $gutter-xl;
+}
