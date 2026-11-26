@@ -1,0 +1,17 @@
+.course-card{
+    margin: $gutter-lg $gutter-md;
+    max-width: 400px;    
+}
+
+.course-actions{
+    display: flex;
+    justify-content: center;
+}
+
+.course-actions button {
+    margin-right:$gutter-md;
+}
+
+.description{
+    padding-top: $gutter-lg;
+}

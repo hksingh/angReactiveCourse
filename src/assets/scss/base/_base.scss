@@ -11,3 +11,10 @@ html{
 body{    
     box-sizing: border-box;
 }
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

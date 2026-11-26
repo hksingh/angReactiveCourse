@@ -1,0 +1,13 @@
+<mat-card class="course-card" appearance="outlined">
+  <mat-card-header>    
+    <mat-card-title>{{course?.description}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="course?.iconUrl">
+  <mat-card-content>
+    <p class="description">{{course?.longDescription}}</p>
+  </mat-card-content>
+  <mat-card-actions class="course-actions">
+    <button matButton color="primary">VIEW COURSE</button>
+    <button matButton color="accent">EDIT</button>
+  </mat-card-actions>
+</mat-card>
